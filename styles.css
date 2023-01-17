@@ -1,0 +1,436 @@
+/* Paleta de colores */
+:root {
+    --color1: #4484CE;
+    --color2: #D9D9D9;
+    --color3: #F9CF00;
+    --color4: #F19F4D;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #4484CE;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.3s;
+  }
+
+  .nav-link:hover:after {
+    width: 100%;
+  }
+
+  .logos {
+    text-decoration: none;
+    color:#4484CE;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 1.5rem 1.5rem;
+    margin: auto;
+  }
+
+  .title-center {
+    font-size: 40px;
+    color: white;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+  }
+
+  .link:hover {
+    color:#4484CE;
+  }
+  
+  section {
+    display: block;
+    background-color: #adabab;
+  }
+  
+  #welcome-section {
+    background-color: var(--color1);
+  }
+  
+  .profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 3.5rem;
+  }
+
+  .subtitulo {
+    font-size: 35px;
+    color: black;
+  }
+
+  .typed-cursor {
+    color: white;
+  }
+
+  .auto-type {
+    color: white;
+  }
+  
+  .autotext {
+    display: table;
+    height: 400px;
+  }
+  
+  .texto {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  .container-button {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .fas, .fab, .colored {
+    margin-left: 5px;
+  }
+  
+  .colored, iconify-icon {
+    font-size: 1.5rem;
+  }
+  
+  .code-button {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    width: 75px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 3px;
+    color: black;
+    transition: all .3s;
+  }
+
+  .code-button:hover {
+    background-color: black;
+    color: white;
+    transition: all .3s;
+  }
+  
+  .container-link {
+    width: 100px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0.8rem 1.5rem;
+    position: relative;
+  }
+  
+  .button-link {
+    font-size: 40px;
+  }
+  
+  #projects {
+    background-color: grey;
+  }
+  
+  .projected {
+    padding: 1.5rem 1.5rem;
+    padding-top: 0;
+    margin: auto;
+  }
+  
+  .project-listed {
+    margin-bottom: 1rem;
+  }
+  
+  .project-image {
+    width: 50%;
+    border: solid 2px black;
+    border-radius: 2px;
+  }
+  
+  .left-spaced {
+    margin-left: 1rem;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .title-center {
+    text-align: center;
+  }
+  
+  .last-bottom {
+    padding-bottom: 2rem;
+  }
+  
+  .centered {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-tile {
+    font-size: 20px;
+  }
+  
+  .project-tech {
+    padding-left:0;
+    margin-left: 0;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#c0c0c0;
+  }
+  
+  .second-tech {
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  p {
+    width: 90%;
+  }
+  
+  #education {
+    background-color: #adabab;
+    height: 300px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .block {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .skill-img {
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .skill-text {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .skill-transi {
+    transition: all 0.3s;
+  }
+
+  .skill-transi:hover {
+    transform: scale(1.2);
+  }
+  
+  .university-card {
+    width: 75%;
+    max-width: 500px;
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 0.15rem 0.6rem rgb(220 220 220);
+    padding: 40px;
+    justify-content: space-between;
+    transition: all 0.3s;
+  }
+
+  .university-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card-content {
+    width: 100%;
+    padding-left: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .spaced {
+    margin-bottom: 2rem;
+  }
+  
+  #contact {
+    background-color: #c0c0c0;
+  }
+  
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 1.5rem;
+    border-radius: 3px;
+    box-shadow: 0 0.15rem 0.6rem rgb(219, 217, 217);
+  }
+  
+  input, textarea, button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+	  outline: none;
+	  background-color: var(--color2);
+	  padding: 0.5rem 1rem;
+	  font-size: 1.1rem;
+	  margin-bottom: 22px;
+	  transition: .3s;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+
+  input:hover, textarea:hover{
+    background-color: rgba(139, 138, 138, 0.6);
+  }
+
+  input:focus, textarea:focus{
+    border: 2px solid var(--color1);
+    background-color: #fff;
+  }
+  
+  textarea {
+    height: 80px;
+  }
+  
+  button {
+    width: 25%;
+    min-width: 100px;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border: 2px solid var(--color1);
+    color: #4484CE;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    color: white;
+    background-color: #4484CE;
+  }
+  
+  #name {
+    margin-top: 1.5rem;
+  }
+  
+  .space {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media (max-width: 900px) {
+    .projected {
+      display: flex;
+      flex-direction: column;
+    }
+    .left-spaced, .block {
+      margin-top: 1rem;
+      margin-left: 0;
+      padding-left: 0;
+    }
+    .project-image {
+      width: 90%;
+    }
+    textarea, input, button {
+      font-size: 0.75rem;
+    }
+    .nav-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-flow: wrap;
+    }
+    .nav-link {
+      font-size: 80%;
+    }
+    li {
+      margin-left: 0;
+      padding: 10px;
+      text-align: center;
+    }
+    .project-tech {
+      font-size: 100%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .university-card {
+      height: 75px;
+    }
+    .especialidad {
+      margin: 0;
+      padding: 0;
+      padding-left: 5px;
+      font-size: 10px;
+    }
+    .card-image {
+      width: 75px;
+      height: 75px;
+    }
+    .card-content {
+      font-size: 70%;
+    }
+  }
+  
