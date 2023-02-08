@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Personal Portfolio</title>
+    <title>Raul Gamero</title>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" href="https://api.iconify.design/icon-park-outline/code-computer.svg?color=%234484ce&width=90&height=90">
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">  
   </head>
   <body>
     <header>
@@ -15,7 +20,6 @@
           <li class="logo"><a href="#welcome-section" class="logos">Raul Gamero</a></li>
           <ul class="flex">
             <li><a href="#projects" class="link nav-link">Projects</a></li>
-            <li><a href="#education" class="link nav-link">Education</a></li>
             <li><a href="#skills" class="link nav-link">Skills</a></li>
             <li><a href="#contact" class="link nav-link">Contact</a></li>
           </ul>
@@ -25,10 +29,11 @@
     <!-- INTRODUCTION -->
     <section id="welcome-section">
         <div class="container autotext">
+          <!-- <img src="images/computer.png" class="computer"> -->
           <div class="texto">
-            <img src="https://avatarfiles.alphacoders.com/128/128984.png" class="profile-image">
+            <!-- <img src="https://avatarfiles.alphacoders.com/128/128984.png" class="profile-image"> -->
               <h1 class="subtitulo"> Hello <span class="auto-type"> world.</span></h1>
-              <h2 class="subtitulo">I'm a Computer engineering student at UPC, in Barcelona.</h2>
+              <h2 class="subtitulo"> I'm a Computer engineering student at UPC, in Barcelona.</h2>
           </div>
         </div>
     </section>
@@ -108,27 +113,9 @@
         </ul>
       </div>
     </section>
-    <!-- EDUCATION -->
-    <section id="education" class="last-bottom">
-      <div class="container centered last-bottom">
-        <h1 class="title-center spaced">Education</h1>
-        <div class="university-card container flex">
-          <div class="card-image">
-                <img src="https://media-exp1.licdn.com/dms/image/C4D0BAQFvyCPhPoCLvA/company-logo_200_200/0/1657869089910?e=2147483647&v=beta&t=CyuDHZstVF7l9eGFFhuCPOs9aeBWg6cMVVZasUhCI3c" alt="UPC" class="card-image">
-              </div>
-          <div class="card-content">
-            <h3>UPC - Computer engineering</h3>
-            <p>2019 - Present</p>
-            <ul>
-              <li class="especialidad">Major in Information Technology</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- SKILLS -->
     <section id="skills" class="last-bottom">
-      <div class="container">
+      <div class="container espai">
         <h1 class="title-center spaced">Skills</h1>
         <ul class="skills-list flex">
           <div class="block skill-transi">
@@ -151,8 +138,6 @@
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-img">
             <label class="skill-text">JavaScript</label>
           </div>
-        </ul>
-        <ul class="skills-list flex">
           <div class="block skill-transi">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" class="skill-img">
             <label class="skill-text">MySQL</label>
@@ -178,26 +163,29 @@
     </section>
     <!-- CONTACT ME -->
     <section id="contact">
-      <div class="centered container">
+      <div class="centered container espai">
         <h1 class="title-center">Contact me</h1>
-        <div class="centered container">
-          <form>
-            <input type="text" id="name" placeholder="Name">
-            <input type="email" id="email" placeholder="Email">
-            <textarea id="message" placeholder="Message"></textarea>
-            <button type="submit">Send<i class="fas fa-paper-plane"></i></button>
-          </form>
-        </div>
+        <ul class="skills-list flex">
+          <div class="block skill-transi">
+            <a href="https://github.com/raulgamero" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-img"> </a> 
+            <label class="skill-text">Follow me</label>
+          </div>
+          <div class="block skill-transi">
+            <a id="profile-link" href="https://www.linkedin.com/in/raul-gamero-26197924a/" target="_blank">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="skill-img"></a>
+            <label class="skill-text">Contact me</label>
+          </div>
+          <div class="block skill-transi">
+            <a href="" target="_blank"><iconify-icon icon="logos:google-gmail" width="90" height="90"></iconify-icon></a>
+            <label class="skill-text">Mail me</label>
+          </div>
+        </ul>
       </div>
     </section>
     <footer>
-      <div class="container space flex">
-        <li><a href="#welcome-section" class="logos">Raul Gamero</a></li>
-        <ul class="flex">
-          <li><a href="https://github.com/raulgamero" target="_blank"><i class="fab fa-github link"></i></a></li>
-          <li><a id="profile-link" href="https://www.linkedin.com/in/raul-gamero-26197924a/" target="_blank"><i class="fab fa-linkedin link"></i></a></li>
-          <li><a href="" target="_blank"><i class="fas fa-envelope link"></i></a></li>
-        </ul>
+      <div class="centered container">
+        <p class="copyright">Copyright © 2023. @gamero_raul</p>
+        <p class="copyright">All rights reserved</p>
       </div>
     </footer>
     <!-- Autotype effect -->
@@ -206,12 +194,12 @@
       {
         // First string don't show up in the text
         strings: ["a", "^1000I'm Gamero.^1000"],
-        startDelay: 2000,
-        typeSpeed: 75,
-        backSpeed: 75,
-        onComplete: function(self) { self.cursor.remove(); }
+        startDelay: 1000,
+        typeSpeed: 100,
+        backSpeed: 90,
+        //onComplete: function(self) { self.cursor.remove(); }
       })
     </script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
   </body>
 </html>
