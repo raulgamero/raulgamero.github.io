@@ -1,205 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Raul Gamero</title>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="icon" href="https://api.iconify.design/icon-park-outline/code-computer.svg?color=%234484ce&width=90&height=90">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">  
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <div class="container nav-container">
-          <li class="logo"><a href="#welcome-section" class="logos">Raul Gamero</a></li>
-          <ul class="flex">
-            <li><a href="#projects" class="link nav-link">Projects</a></li>
-            <li><a href="#skills" class="link nav-link">Skills</a></li>
-            <li><a href="#contact" class="link nav-link">Contact</a></li>
-          </ul>
+    <head>
+        <title>Raul Gamero</title>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="icon" href="https://api.iconify.design/icon-park-outline/code-computer.svg?color=%234484ce&width=90&height=90">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- INTRODUCTION -->
+        <section id="welcome-section">
+            <header>
+                <nav id="navbar">
+                    <div class="nav-container">
+                        <li class="logo"><a href="#welcome-section" class="logos">Raul Gamero</a></li>
+                        <ul class="flex">
+                            <li><a href="#projects" class="link nav-link"><i class="fas fa-book"></i>  Projects</a></li>
+                            <li><a href="#skills" class="link nav-link"><i class="far fa-keyboard"></i>  Skills</a></li>
+                            <li><a href="#contact" class="link nav-link"><i class="fas fa-comments"></i>  Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <div class="autotext">
+                <div class="container">
+                    <img src="images/myself.jpg" class="profile-image">
+                    <div class="texto">
+                        <h1 class="subtitulo"><span class="wave" onclick="">👋 </span> Hello<span class="auto-type"> world.</span></h1>
+                        <h2 class="subtitulo"> I'm a Computer engineering student at UPC, in Barcelona.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper1">
+            <div class="custom-shape-divider-bottom-1676034197">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
         </div>
-      </nav>
-    </header>
-    <!-- INTRODUCTION -->
-    <section id="welcome-section">
-        <div class="container autotext">
-          <!-- <img src="images/computer.png" class="computer"> -->
-          <div class="texto">
-            <!-- <img src="https://avatarfiles.alphacoders.com/128/128984.png" class="profile-image"> -->
-              <h1 class="subtitulo"> Hello <span class="auto-type"> world.</span></h1>
-              <h2 class="subtitulo"> I'm a Computer engineering student at UPC, in Barcelona.</h2>
-          </div>
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="container">
+                <h1 class="title-center spaced">Projects</h1>
+                <ul class="project-listed block">
+                    <div class="projected flex">
+                        <img src="images/a2backend.png" class="project-image">
+                        <div class="container block left-spaced">
+                            <h3 class="project-tile">GeSys backend</h3>
+                            <ul class="flex">
+                                <li class="project-tech">Made with:</li>
+                                <li class="second-tech"><iconify-icon icon="logos:swagger"></iconify-icon></li>
+                                <li class="second-tech">
+                                    <i class="devicon-sqlalchemy-plain colored"></i>
+                                </li>
+                                <li class="second-tech">
+                                    <i class="devicon-django-plain colored"></i>
+                                </li>
+                                <li class="second-tech">
+                                    <i class="devicon-trello-plain colored"></i>
+                                </li>
+                            </ul>
+                            <p class="project-p"> Deploy an API using DJANGO and SQLALCHEMY, and an IoT-Edge-Cloud infraestructure that communicates through MQTT protocol.
+                                This project was built in a group of 7 people and we worked using the Agile methodology.</p>
+                            <a href="https://github.com/PTIN2022/A2" target="_blank" class="link code-button">Code<i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="project-listed block">
+                    <div class="projected flex">
+                        <img src="https://benrogers.dev/img/euphorus-backend.png" class="project-image">
+                        <div class="container block left-spaced">
+                            <h3 class="project-tile">Project template</h3>
+                            <ul class="flex">
+                                <li class="project-tech">Made with:</li>
+                                <li class="second-tech"><iconify-icon icon="logos:swagger"></iconify-icon></li>
+                                <li class="second-tech">
+                                    <i class="devicon-flask-plain colored"></i>
+                                </li>
+                                <li class="second-tech">
+                                    <i class="devicon-python-plain colored"></i>
+                                </li>
+                                <li class="second-tech">
+                                    <i class="devicon-trello-plain colored"></i>
+                                </li>
+                            </ul>
+                            <p class="project-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="https://github.com/raulgamero" target="_blank" class="link code-button">Code<i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="project-listed block">
+                    <div class="projected flex">
+                        <img src="https://benrogers.dev/img/euphorus-backend.png" class="project-image">
+                        <div class="container block left-spaced">
+                            <h3 class="project-tile">Project template</h3>
+                            <ul class="flex">
+                                <li class="project-tech">Made with:</li>
+                                <li class="second-tech"><iconify-icon icon="logos:swagger"></iconify-icon></li>
+                                <li class="second-tech">
+                                    <i class="devicon-flask-plain colored"></i>
+                                </li>
+                                <li class="second-tech">
+                                    <i class="devicon-python-plain colored"></i>
+                                </li>
+                                <li class="second-tech">
+                                    <i class="devicon-trello-plain colored"></i>
+                                </li>
+                            </ul>
+                            <p class="project-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="https://github.com/raulgamero" target="_blank" class="link code-button">Code<i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <!-- SKILLS -->
+        <section id="skills" class="last-bottom">
+            <div class="container espai">
+                <h1 class="title-center spaced">Skills</h1>
+                <ul class="skills-list flex">
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="skill-img">
+                        <label class="skill-text">C++</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="skill-img">
+                        <label class="skill-text">C</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-img">
+                        <label class="skill-text">Java</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-img">
+                        <label class="skill-text">Python</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-img">
+                        <label class="skill-text">JavaScript</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" class="skill-img">
+                        <label class="skill-text">MySQL</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-img">
+                        <label class="skill-text">HTML</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-img">
+                        <label class="skill-text">CSS</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-img">
+                        <label class="skill-text">Git</label>
+                    </div>
+                    <div class="block skill-transi">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="skill-img">
+                        <label class="skill-text">Linux</label>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <div class="wrapper1">
+            <div class="custom-shape-divider-top-1676031757">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+                </svg>
+            </div>
         </div>
-    </section>
-    <!-- PROJECTS -->
-    <section id="projects">
-      <div class="container">
-        <h1 class="title-center spaced">Projects</h1>
-        <ul class="project-listed block">
-          <div class="projected flex">
-            <img src="images/a2backend.png" class="project-image">
-            <div class="container block left-spaced">
-              <h3 class="project-tile">GeSys backend</h3>
-              <ul class="flex">
-                <li class="project-tech">Made with:</li>
-                <li class="second-tech"><iconify-icon icon="logos:swagger"></iconify-icon></li>
-                <li class="second-tech">
-                  <i class="devicon-sqlalchemy-plain colored"></i>
-            </li>
-                <li class="second-tech">
-                  <i class="devicon-django-plain colored"></i>
-            </li>
-            <li class="second-tech">
-              <i class="devicon-trello-plain colored"></i>
-            </li>
-              </ul>
-              <p>Deploy an API using DJANGO and SQLALCHEMY, and an IoT-Edge-Cloud infraestructure that communicates through MQTT protocol.
-                This project was built in a group of 7 people and we worked using the Agile methodology.</p>
-              <a href="https://github.com/PTIN2022/A2" target="_blank" class="link code-button">Code<i class="fab fa-github"></i></a>
+        <!-- CONTACT ME -->
+        <section id="contact">
+            <div class="container texto ocupado">
+                <div class="contacted texto">
+                    <div class="p-contact">
+                        <h1 class="c-title">Let's get in touch!</h1>
+                        <p class="c-para"><a href="mailto:raul.gamero.cs@gmail.com" class="correo">Pop me an email</a> at raul.gamero.cs@gmail.com or give me a shout on social media.</p>
+                        <ul class="flex">
+                            <li><a id="profile-link" href="https://www.linkedin.com/in/raul-gamero-26197924a/" target="_blank"><i class="fab fa-linkedin link icons"></i></a></li>
+                            <li><a href="https://github.com/raulgamero" target="_blank"><i class="fab fa-github link icons"></i></a></li>
+                        </ul>
+                    </div>
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json"  background="transparent"  speed="1"  style="width: 80%;"  loop  autoplay></lottie-player>
+                </div>
             </div>
-          </div>
-        </ul>
-        <ul class="project-listed block">
-          <div class="projected flex">
-            <img src="https://benrogers.dev/img/euphorus-backend.png" class="project-image">
-            <div class="container block left-spaced">
-              <h3 class="project-tile">Project template</h3>
-              <ul class="flex">
-                <li class="project-tech">Made with:</li>
-                <li class="second-tech"><iconify-icon icon="logos:swagger"></iconify-icon></li>
-                <li class="second-tech">
-              <i class="devicon-flask-plain colored"></i>
-            </li>
-                <li class="second-tech">
-              <i class="devicon-python-plain colored"></i>
-            </li>
-            <li class="second-tech">
-              <i class="devicon-trello-plain colored"></i>
-            </li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="https://github.com/raulgamero" target="_blank" class="link code-button">Code<i class="fab fa-github"></i></a>
+        </section>
+        <footer>
+            <div class="centered container">
+            <p class="copyright">Copyright © 2023. @gamero_raul</p>
+            <p class="copyright">All rights reserved</p>
             </div>
-          </div>
-        </ul>
-        <ul class="block project-listed last-bottom">
-          <div class="projected flex">
-            <img src="https://benrogers.dev/img/euphorus-backend.png" class="project-image">
-            <div class="container block left-spaced">
-              <h3 class="project-tile">Project template</h3>
-              <ul class="flex">
-                <li class="project-tech">Made with:</li>
-                <li class="second-tech"><iconify-icon icon="logos:swagger"></iconify-icon></li>
-                <li class="second-tech">
-              <i class="devicon-flask-original colored"></i>
-            </li>
-                <li class="second-tech">
-              <i class="devicon-python-plain colored"></i>
-            </li>
-            <li class="second-tech">
-              <i class="devicon-trello-plain colored"></i>
-            </li>
-              </ul>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="https://github.com/raulgamero" target="_blank" class="link code-button">Code<i class="fab fa-github"></i></a>
-            </div>
-          </div>
-        </ul>
-      </div>
-    </section>
-    <!-- SKILLS -->
-    <section id="skills" class="last-bottom">
-      <div class="container espai">
-        <h1 class="title-center spaced">Skills</h1>
-        <ul class="skills-list flex">
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="skill-img">
-            <label class="skill-text">C++</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="skill-img">
-            <label class="skill-text">C</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-img">
-            <label class="skill-text">Java</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-img">
-            <label class="skill-text">Python</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-img">
-            <label class="skill-text">JavaScript</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" class="skill-img">
-            <label class="skill-text">MySQL</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-img">
-            <label class="skill-text">HTML</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-img">
-            <label class="skill-text">CSS</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-img">
-            <label class="skill-text">Git</label>
-          </div>
-          <div class="block skill-transi">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" class="skill-img">
-            <label class="skill-text">Linux</label>
-          </div>
-        </ul>
-      </div>
-    </section>
-    <!-- CONTACT ME -->
-    <section id="contact">
-      <div class="centered container espai">
-        <h1 class="title-center">Contact me</h1>
-        <ul class="skills-list flex">
-          <div class="block skill-transi">
-            <a href="https://github.com/raulgamero" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-img"> </a> 
-            <label class="skill-text">Follow me</label>
-          </div>
-          <div class="block skill-transi">
-            <a id="profile-link" href="https://www.linkedin.com/in/raul-gamero-26197924a/" target="_blank">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" class="skill-img"></a>
-            <label class="skill-text">Contact me</label>
-          </div>
-          <div class="block skill-transi">
-            <a href="" target="_blank"><iconify-icon icon="logos:google-gmail" width="90" height="90"></iconify-icon></a>
-            <label class="skill-text">Mail me</label>
-          </div>
-        </ul>
-      </div>
-    </section>
-    <footer>
-      <div class="centered container">
-        <p class="copyright">Copyright © 2023. @gamero_raul</p>
-        <p class="copyright">All rights reserved</p>
-      </div>
-    </footer>
+        </footer>
+    </body>
     <!-- Autotype effect -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script> var typed = new Typed(".auto-type",
-      {
+    <script>
+        var typed = new Typed(".auto-type",
+        {
         // First string don't show up in the text
-        strings: ["a", "^1000I'm Gamero.^1000"],
+        strings: ["a", "^1000, I'm Gamero.^1000"],
         startDelay: 1000,
         typeSpeed: 100,
         backSpeed: 90,
-        //onComplete: function(self) { self.cursor.remove(); }
-      })
+        onComplete: function(self) { self.cursor.remove(); }
+        })
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
-  </body>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </html>
