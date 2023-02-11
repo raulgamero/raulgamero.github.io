@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link rel="icon" href="https://api.iconify.design/icon-park-outline/code-computer.svg?color=%234484ce&width=90&height=90">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
@@ -14,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div id="particles-js"></div>
         <!-- INTRODUCTION -->
         <section id="welcome-section">
             <header>
@@ -29,7 +31,7 @@
                 </nav>
             </header>
             <div class="autotext">
-                <div class="container">
+                <div class="container" style="z-index: 1;">
                     <img src="images/myself.jpg" class="profile-image">
                     <div class="texto">
                         <h1 class="subtitulo"><span class="wave" onclick="">👋 </span> Hello<span class="auto-type"> world.</span></h1>
@@ -48,9 +50,9 @@
         <!-- PROJECTS -->
         <section id="projects">
             <div class="container">
-                <h1 class="title-center spaced">Projects</h1>
+                <h1 class="title-center spaced" data-aos="fade-up">Projects</h1>
                 <ul class="project-listed block">
-                    <div class="projected flex">
+                    <div class="projected flex" data-aos="fade-up">
                         <img src="images/a2backend.png" class="project-image">
                         <div class="container block left-spaced">
                             <h3 class="project-tile">GeSys backend</h3>
@@ -74,7 +76,7 @@
                     </div>
                 </ul>
                 <ul class="project-listed block">
-                    <div class="projected flex">
+                    <div class="projected flex" data-aos="fade-up">
                         <img src="https://benrogers.dev/img/euphorus-backend.png" class="project-image">
                         <div class="container block left-spaced">
                             <h3 class="project-tile">Project template</h3>
@@ -97,7 +99,7 @@
                     </div>
                 </ul>
                 <ul class="project-listed block">
-                    <div class="projected flex">
+                    <div class="projected flex" data-aos="fade-up">
                         <img src="https://benrogers.dev/img/euphorus-backend.png" class="project-image">
                         <div class="container block left-spaced">
                             <h3 class="project-tile">Project template</h3>
@@ -124,8 +126,8 @@
         <!-- SKILLS -->
         <section id="skills" class="last-bottom">
             <div class="container espai">
-                <h1 class="title-center spaced">Skills</h1>
-                <ul class="skills-list flex">
+                <h1 class="title-center spaced" data-aos="fade-up">Skills</h1>
+                <ul class="skills-list flex" data-aos="fade-up">
                     <div class="block skill-transi">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="skill-img">
                         <label class="skill-text">C++</label>
@@ -179,7 +181,7 @@
         <!-- CONTACT ME -->
         <section id="contact">
             <div class="container texto ocupado">
-                <div class="contacted texto">
+                <div class="contacted texto" data-aos="fade-up" data-aos-delay="150">
                     <div class="p-contact">
                         <h1 class="c-title">Let's get in touch!</h1>
                         <p class="c-para"><a href="mailto:raul.gamero.cs@gmail.com" class="correo">Pop me an email</a> at raul.gamero.cs@gmail.com or give me a shout on social media.</p>
@@ -214,4 +216,121 @@
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="particles.min.js"></script>
+    <script>
+        particlesJS({
+  "particles": {
+    "number": {
+      "value": 160,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#F0ECE2"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+      "image": {
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "opacity": {
+      "value": 1,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 1,
+      "direction": "none",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 600
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "bubble"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "repulse"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 250,
+        "size": 0,
+        "duration": 2,
+        "opacity": 0,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 400,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+})
+    </script>
 </html>
