@@ -80,6 +80,22 @@
     margin: auto;
   }
 
+  .main {
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    position: relative;
+  }
+
+  .main-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    position: relative;
+    text-align: left;
+  }
+
   .flex {
     display: flex;
   }
@@ -102,6 +118,12 @@
     align-items: center;
   }
 
+  .on-titulo {
+    color: var(--color2);
+    padding-right: 2rem;
+    font-size: 30px;
+  }
+
   /*INTRODUCTION*/
   #welcome-section {
     min-height: 100vh;
@@ -115,14 +137,14 @@
   }
 
   .profile-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    animation: morph 8s ease-in-out infinite;
+    background-image: url(/static/media/heropfp.7bb160c….png);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    width: 12rem;
+    height: 12rem;
+    position: relative;
+    transition: all 1s ease-in-out;
     border: 3px solid white;
-    margin-bottom: 1.5rem;
   }
 
   .texto {
@@ -130,39 +152,24 @@
     place-items: center;
   }
 
-  .wave {
-    cursor: default;
-  }
-
-  .wave:hover {
-    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.5s;        /* Change to speed up or slow down */
-    animation-iteration-count: infinite;  /* Never stop waving :) */
-    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-    display: inline-block;
-  }
-
-  @keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-  100% { transform: rotate( 0.0deg) }
+  .titulo {
+    color: white;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
   }
 
   .subtitulo {
     color: var(--color2);
+    margin-bottom: 2rem;
+    font-weight: 100;
   }
 
   h1 {
     font-size: 2rem;
   }
   h2 {
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1.25rem;
   }
 
   .space {
@@ -250,7 +257,7 @@
   }
   
   .project-image {
-    width: 50%;
+    width: 32rem;
     border: solid 2px black;
     border-radius: 5px;
   }
@@ -452,7 +459,37 @@
     }
   }
 
+  @media (max-width:750px) {
+    .main {
+      display: grid;
+      place-items: center;
+      gap: 2rem;
+    }
+    .main-2 {
+      display: grid;
+      place-items: center;
+      text-align: center;
+    }
+    .titulo {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+  
+    .subtitulo {
+      color: var(--color2);
+      margin-bottom: 1rem;
+      font-weight: 100;
+    }
+  }
+
   @media (max-width:414px) {
+
+    .profile-image {
+      width: 10rem;
+      height: 10rem;
+    }
+
     .icons {
         padding-right: 0;
     }
@@ -492,7 +529,7 @@
         font-size: 1.5rem;
     }
     h2{
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
     .projected {
       display: flex;
@@ -566,3 +603,15 @@
         width: 80%;
     }
   }
+@keyframes morph {
+  0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+      border-radius: 60% 40% 30% 70%/60% 30% 
+  }
+}

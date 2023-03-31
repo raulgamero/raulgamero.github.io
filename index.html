@@ -15,7 +15,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="particles-js"></div>
         <!-- INTRODUCTION -->
         <section id="welcome-section">
             <header>
@@ -31,11 +30,17 @@
                 </nav>
             </header>
             <div class="autotext">
-                <div class="container" style="z-index: 1;">
-                    <img src="images/myself.jpg" class="profile-image">
-                    <div class="texto">
-                        <h1 class="subtitulo"><span class="wave" onclick="">👋 </span> Hello<span class="auto-type"> world.</span></h1>
-                        <h2 class="subtitulo"> I'm a Computer engineering student at UPC, in Barcelona.</h2>
+                <div class="container">
+                    <div class="main"><img src="images/myself.jpg" class="profile-image">
+                        <div class="main-2">
+                            <h1 class="titulo">Hello<span class="auto-type"> world.</span></h1>
+                            <h2 class="subtitulo"> A last year computer engineering student at UPC.<br>Based in Barcelona, Spain. 📍</h2>
+                            <ul class="flex">
+                                <li><a id="profile-link" href="https://www.linkedin.com/in/raul-gamero-26197924a/" target="_blank"><i class="fab fa-linkedin link on-titulo"></i></a></li>
+                                <li><a href="https://github.com/raulgamero" target="_blank"><i class="fab fa-github link on-titulo"></i></a></li>
+                            </ul>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -145,8 +150,8 @@
                         <label class="skill-text">Python</label>
                     </div>
                     <div class="block skill-transi">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-img">
-                        <label class="skill-text">JavaScript</label>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-img">
+                        <label class="skill-text">Postgresql</label>
                     </div>
                     <div class="block skill-transi">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" class="skill-img">
@@ -219,118 +224,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script src="particles.min.js"></script>
-    <script>
-        particlesJS({
-  "particles": {
-    "number": {
-      "value": 200,
-      "density": {
-        "enable": true,
-        "value_area": 3945.7382081613637
-      }
-    },
-    "color": {
-      "value": "#F0ECE2"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#F0ECE2"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.7575817359669818,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 0,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#F0ECE2",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 1.5782952832645452,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": false,
-        "mode": "remove"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 170.53621458328246,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-})
     </script>
 </html>
