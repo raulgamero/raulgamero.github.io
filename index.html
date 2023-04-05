@@ -20,15 +20,25 @@
             <header>
                 <nav id="navbar">
                     <div class="nav-container">
-                        <li class="logo"><img href="#welcome-section" src="images/logo.png" class="logo"></img></li>
+                        <li class="logo espacio"><a href="#welcome-section"><img src="images/logo.png" class="logo"></img></a></li>
                         <ul class="flex">
-                            <li><a href="#projects" class="link nav-link"><i class="fas fa-book"></i>  Projects</a></li>
-                            <li><a href="#skills" class="link nav-link"><i class="far fa-keyboard"></i>  Skills</a></li>
-                            <li><a href="#contact" class="link nav-link"><i class="fas fa-comments"></i>  Contact</a></li>
+                            <li class="desaparecer"><a href="#projects" class="link nav-link"><i class="fas fa-book"></i>  Projects</a></li>
+                            <li class="desaparecer"><a href="#skills" class="link nav-link"><i class="far fa-keyboard"></i>  Skills</a></li>
+                            <li class="desaparecer"><a href="#contact" class="link nav-link"><i class="fas fa-comments"></i>  Contact</a></li>
+                            <li class="aparecer"><i class="fas fa-bars mobile-menu" id="mobile-menu"></i></li>
                         </ul>
                     </div>
                 </nav>
             </header>
+            <div class="mobile-nav closed-menu" id="closed-menu">
+                <span><i class="fas fa-times" id="cerrar"></i></span>
+                <ul>
+                    <li><a href="#welcome-section" class="closed-link" id="cerrar2">Home</a></li>
+                    <li><a href="#projects" class="closed-link" id="cerrar3">Projects</a></li>
+                    <li><a href="#skills" class="closed-link" id="cerrar4">Skills</a></li>
+                    <li><a href="#contact" class="closed-link" id="cerrar5">Contact</a></li>
+                </ul>
+            </div>
             <div class="autotext">
                 <div class="container">
                     <div class="main"><img src="images/myself.jpg" class="profile-image">
@@ -212,11 +222,15 @@
         var typed = new Typed(".auto-type",
         {
         // First string don't show up in the text
-        strings: ["a", "^1000, I'm  Raul.^1000"],
+        strings: ["a", "^1000, I'm  Raul.^1700"],
         startDelay: 1000,
         typeSpeed: 100,
         backSpeed: 90,
-        onComplete: function(self) { self.cursor.remove(); }
+        onComplete: function(self) {
+            var els = document.getElementsByClassName('typed-cursor');
+            for (var i = 0; i < els.length; i++) {
+                els[i].style.color = '#2B2B2B';
+            } }
         })
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
@@ -225,4 +239,5 @@
     <script>
         AOS.init();
     </script>
+    <script src="scripts.js"> </script>
 </html>
