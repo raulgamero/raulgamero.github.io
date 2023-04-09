@@ -56,9 +56,8 @@
   .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     flex-flow: wrap;
-    padding: 0.75rem 0.75rem;
+    padding: 0.75rem 6vw;
     margin: auto;
   }
   .nav-link {
@@ -331,14 +330,13 @@
   .project-tech {
     padding-left:0;
     margin-left: 0;
-    margin-right: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
     color:#646464;
   }
   
   .second-tech {
-    margin: 0;
+    margin-left: 3%;
   }
 
   .fas, .fab, .colored {
@@ -441,7 +439,7 @@
     padding-left: 4rem;
   }
 
-  .flex {
+  .flex-2 {
     display: flex;
   }
 
@@ -547,12 +545,10 @@
       height: 10rem;
     }
 
+
+
     .icons {
         padding-right: 0;
-    }
-
-    .flex {
-        justify-content: center;
     }
 
     .skills-title {
@@ -592,12 +588,8 @@
     .on-titulo {
       padding-right: 0;
     }
-    .logo {
-      margin-left: -50px;
-    }
     .espacio {
       padding: 5px;
-      margin-left: 50px;
     }
     h1{
         font-size: 1.5rem;
@@ -635,8 +627,8 @@
     .nav-container {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
       flex-flow: wrap;
+      padding: 0.5rem 0.75rem;
       padding-bottom: 0.15rem;
     }
     .mobile-menu {
@@ -681,7 +673,6 @@
     }
     .flex {
         flex-direction: row;
-        justify-content: space-around;
         flex-flow: wrap;
     }
     .icons {
@@ -691,5 +682,13 @@
 
     lottie-player {
         width: 80%;
+    }
+
+    .flex-2 {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      justify-content: center;
+      justify-content: space-around;
     }
 }
