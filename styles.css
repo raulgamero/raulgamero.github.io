@@ -262,6 +262,12 @@
     transition: all .3s;
   }
 
+  .middle-spaced {
+    width: 250px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .code-button:hover {
     background-color: black;
     color: white;
