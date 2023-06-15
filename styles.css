@@ -296,7 +296,6 @@
   .projected {
     padding: 1.5rem 1.5rem;
     padding-top: 0;
-    margin: auto;
   }
   
   .project-listed {
@@ -348,6 +347,35 @@
   .fas, .fab, .colored {
     margin-left: 5px;
   }
+
+  .fa-chevron-circle-left {
+    float: left;
+  }
+
+  .fa-chevron-circle-right {
+    float: right;
+  }
+
+  .flechas {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    transition: all .3s;
+    cursor: pointer;
+  }
+
+  .flechas:hover {
+    color: #afa698;
+    transition: all .3s;
+  }
+
+  .center-vertical {
+    position: absolute;
+    top: 50%;
+    width: 99%;
+  }
+  
 
   /* SKILLS */
   #skills {
