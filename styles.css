@@ -199,6 +199,7 @@
   }
 
   .titulo {
+    min-width: 150%;
     color: white;
     font-size: 3.5rem;
     line-height: 1.2;
@@ -248,8 +249,165 @@
     fill: #F0ECE2;
 }
 
+/*EXPERIENCE*/
+#experiencia {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #111;
+  letter-spacing: 1.5px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  padding: 0;
+}
+
+/* Items timeline */
+.timeline-item {
+  border: 2px solid black;
+  position: relative;
+  width: 47%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2.75px;
+  background-color: #000000; /* Change to #000 (black) or #fff (white) if you want */
+  transform: translateX(-50%);
+}
+
+
+/* Animación al mostrar */
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Izquierda */
+.timeline-item.left {
+  left: 0;
+  text-align: right;
+}
+
+/* Derecha */
+.timeline-item.right {
+  left: 53%;
+  text-align: left;
+}
+
+/* Icono circular negro */
+.timeline-icon {
+  border: 1.5px solid black;
+  position: absolute;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color4);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  cursor: default;
+  transition: background-color 0.4s ease;
+}
+
+.timeline-item.left .timeline-icon {
+  right: -25px;
+}
+
+.timeline-item.right .timeline-icon {
+  left: -25px;
+}
+
+/* Icono activo color gris claro */
+.timeline-item.visible .timeline-icon {
+  background-color: var(--color2);
+}
+
+/* Texto */
+.timeline-content h3 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--color4);
+  margin-bottom: 6px;
+  letter-spacing: 0.03em;
+}
+
+.timeline-content span {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 14px;
+  font-style: italic;
+}
+
+.timeline-content p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  font-weight: 400;
+}
+
+/* Hover para dar sensación de elevación con sombra negra ligera */
+.timeline-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  transition: all 0.3s ease;
+}
+
+/* Responsive: móvil */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item,
+  .timeline-item.left,
+  .timeline-item.right {
+    width: 100%;
+    left: 0 !important;
+    text-align: left !important;
+    margin-left: 0;
+    padding-left: 70px;
+  }
+
+  .timeline-icon {
+    left: 0 !important;
+    right: auto !important;
+  }
+}
+
+
+
   /*PROJECTS*/
-  #projects {
+  #projects, #certificates, #experience {
     background-color: #F0ECE2;
   }
 
