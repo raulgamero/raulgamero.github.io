@@ -13,7 +13,7 @@
   }
 
   html {
-    scroll-behavior: smoothprofi;
+    scroll-behavior: smooth;
     scroll-padding-block: 30px;
   }
 
@@ -199,7 +199,6 @@
   }
 
   .titulo {
-    min-width: 150%;
     color: white;
     font-size: 3.5rem;
     line-height: 1.2;
